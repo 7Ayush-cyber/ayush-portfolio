@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: "Space Grotesk";
+  --font-body: "Inter";
+  --font-mono: "JetBrains Mono";
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-ink font-body antialiased;
+    font-feature-settings: "ss01" on, "cv01" on;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+
+  ::selection {
+    background-color: #f28c3833;
+    color: #111111;
+  }
+
+  :focus-visible {
+    outline: 2px solid #f28c38;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.18em] uppercase text-muted;
+  }
+
+  .bg-signal {
+    background-image: var(--tw-gradient-stops);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

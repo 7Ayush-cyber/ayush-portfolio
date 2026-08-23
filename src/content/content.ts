@@ -67,6 +67,46 @@ export const content: PortfolioContent = {
       ],
       tech_stack: ["Python", "BM25", "FAISS", "Embeddings", "Cross-Encoder", "RRF", "Streamlit"],
     },
+        // {
+    //   title: "Road Accident Analytics using Geospatial Data",
+    //   category: "Geospatial Analytics / ML",
+    //   link: "",
+    //   summary:
+    //     "B.Tech project focused on transforming heterogeneous iRAD accident records into a structured road-safety dataset for segment-level analysis.",
+    //   bullets: [
+    //     "Built a GIS pipeline for crash-to-road matching, chainage, segmentation, and segment-level feature extraction",
+    //     "Integrated road geometry, curvature, intersections, and AADT using spatial methods",
+    //     "Conducting EDA, feature engineering, and supervised ML using Logistic Regression, Random Forest, and XGBoost",
+    //   ],
+    //   tech_stack: [
+    //     "Python",
+    //     "GIS",
+    //     "GeoPandas",
+    //     "Pandas",
+    //     "Scikit-learn",
+    //     "Random Forest",
+    //     "XGBoost",
+    //   ],
+    // },
+    {
+      title: "Semi-Supervised Learning for Weed Detection",
+      category: "Computer Vision",
+      link: "https://github.com/7Ayush-cyber/12_Semi_Supervised_Weed_Detection",
+      summary:
+        "A semi-supervised YOLOv9 pipeline for robust weed detection using labeled and unlabeled agricultural imagery.",
+      bullets: [
+        "Merged labeled and unlabeled data using confidence-based pseudo-labeling",
+        "Improved localization using GIoU loss, F1-based evaluation, and Albumentations",
+        "Achieved 0.89 precision, 0.88 recall, and 0.62 mAP@50–95 on test data",
+      ],
+      tech_stack: [
+        "YOLOv9",
+        "Python",
+        "Albumentations",
+        "Computer Vision",
+        "Pseudo-labeling",
+      ],
+    },
     {
       title: "Legal Contract Intelligence Platform",
       category: "RAG / Legal AI",
@@ -120,6 +160,18 @@ export const content: PortfolioContent = {
       focus: ["Growth Strategy", "Product Validation", "Community Building"],
       link: "",
     },
+        {
+      title: "WaterWise",
+      summary:
+        "Campus water-management consulting solution developed for Kriti'25.",
+      bullets: [
+        "Diagnosed 30–40% campus water loss through supply-demand analysis and infrastructure assessment",
+        "Surveyed 90+ users and analyzed BOD > 10 to identify purity and wastewater-management gaps",
+        "Proposed a Rs. 1.2 Cr solution roadmap covering IoT valves, PAC dosing, and hostel-level tank upgrades",
+      ],
+      focus: ["Consulting", "Data Analysis", "Problem Solving", "Strategy"],
+      link: "https://drive.google.com/file/d/1u4el5RFWLZFBK3Ur_LUALLt22aR_XNbg/view?usp=sharing",
+    },
     {
       title: "Kaccha Chittha",
       summary: "Student-driven platform improving faculty visibility and mentorship transparency.",
@@ -131,6 +183,7 @@ export const content: PortfolioContent = {
       focus: ["Product Development", "User Research", "MVP"],
       link: "https://kacchachittha-render.onrender.com/",
     },
+    
     {
       title: "HYGO: Hygiene On The Go",
       summary: "Sustainable flushable seat-cover product made using recycled cotton and water hyacinth.",
@@ -178,6 +231,19 @@ export const content: PortfolioContent = {
         tags: ["GTM", "Pricing", "Market Research", "Segmentation"],
       },
       {
+        title: "B.Tech Project — Road Accident Analytics",
+        org: "Under Prof. Nipjyoti Bharadwaj, IIT Guwahati",
+        duration: "Aug 2026 to Present",
+        description:
+          "Geospatial road-safety analytics using heterogeneous iRAD accident records.",
+        bullets: [
+          "Engineered a structured road-safety dataset for geospatial analysis",
+          "Built crash-to-road matching, chainage, segmentation, and segment-level feature extraction pipelines",
+          "Applying EDA, feature engineering, and supervised ML to identify road-safety patterns",
+        ],
+        tags: ["GIS", "Geospatial Analytics", "Machine Learning", "Road Safety"],
+      },
+      {
         title: "Welfare Secretary",
         org: "Kameng Hostel Management Committee, IIT Guwahati",
         duration: "Apr 2026 to Present",
@@ -220,6 +286,7 @@ export const content: PortfolioContent = {
   },
 
   achievements: [
+    "Best Head Award, SAIL Board — 2026",
     "1st in Robotics, Kriti 2025",
     "3rd in Cybersecurity CTF, 2025",
     "1st in Startup Sprint, 2024",
